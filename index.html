@@ -44,7 +44,7 @@
                 </div>
 
                 <div class='author-name'> 
-                  #{{ issue.number}} by {{ issue.user.login }} 
+                  #{{ issue.number}} opened {{ timeAgo(issue.created_at) }} ago by {{ issue.user.login }} 
                 </div>
                 <p> {{ issue.body }} </p>
               </li>
