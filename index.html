@@ -1,10 +1,60 @@
 <!doctype html>
-<html>
+<html ng-app="exstarter" lang="en">
   <head>
     <title>Elixir Starter</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" href="css/primer.css">
+    <link rel="stylesheet" href="css/octicons/octicons.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
   </head>
-  <body>
+  <body ng-controller="IssuesListController">
+    <div class="container">
+      <div class="columns">
+
+        <div class="three-fourths column centered">
+          <div class="blankslate clean-background">
+            <h1 class='title'>Elixir Starter</h1>
+            <p>
+              Elixir Starters is a tiny website which shows
+              all Github issues tagged with 
+              <a href="#" class="label labelstyle-fef2c0 linked-labelstyle-fef2c0 " style="background-color: #fef2c0; color: #333026;">Level:Starter</a> on repos where the main language is Elixir.
+            </p>
+          </div>
+          <h1>Total starter issues: {{total_issues}}</h1>
+
+          <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <!-- List group -->
+            <ul class="list-group issue-list">
+              <li ng-repeat="issue in issues" class="list-group-item">
+                <h3 class='issue-title'>
+                  <a href="{{issue.html_url}}" target="_blank" class="black">
+                    <span class="octicon octicon-issue-opened green"></span>
+                    {{ issue.title }}
+                  </a>
+                </h3>
+                <span>
+                  <a href="{{issue.html_url}}" target="_blank" class="grey">
+                    <span class="octicon octicon-comment"></span>
+                    {{issue.comments}}
+                  </a>
+
+                </span>
+
+                <span class='author-name'> 
+                  #{{ issue.number}} by {{ issue.user.login }} 
+                  <a href="{{issue.user.html_url}}" target="_blank">
+                    <img class="avatar avatar-small" src="{{issue.user.avatar_url}}?v=3&s=32" width="32" height="32">
+                  </a>
+                </span>
+                <p> {{ issue.body }} </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </body>
 </html>
