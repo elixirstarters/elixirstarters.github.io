@@ -16,7 +16,10 @@
 }
 
 h3.issue-title {
+  display: inline-block;
   margin-bottom: 0px;
+  margin-right: 0px;
+  width: 90%;
 }
 
 h3.issue-title a:hover {
@@ -39,12 +42,13 @@ ul.issue-list li:hover {
 }
 
 .author-name {
+  margin-top: 3px;
   margin-left: 20px;
 }
 
 .list-group-item p {
   margin-bottom: 0px;
-  padding: 0 10px;
+  padding: 0 10px 0px 20px;
 }
 
 .right {
@@ -65,3 +69,27 @@ ul.issue-list li:hover {
 .blankslate p {
   font-size: 14px;
 }
+
+.comments-link {
+  display: inline-block;
+  float: right;
+  font-size: 11px;
+  margin-top: 15px;
+}
+
+.repo-name {
+  font-size: 14px;
+}
+
+.octicon-issue-opened {
+  display: inline-block;
+  float: left;
+  margin-right: 5px;
+  margin-top: 15px;
+  width: 16px;
+}
+
+a.label:hover {
+  text-decoration: none;
+}
+
