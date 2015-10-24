@@ -32,6 +32,8 @@ I am a backend developer, so my design chops are not great (as you can see). So,
 if you feel that you can contribute in the UI/UX of the site, or in fact, in any 
 other way feel free to fork and submit a pull request.
 
+Also, check out the [issues](https://github.com/elixirstarters/elixirstarters.github.io/issues).
+
 ## If you are a Elixir developer...
 
 ...please tag any beginner issues you have with your Elixir project with "Level:Starter"!
