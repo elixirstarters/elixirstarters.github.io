@@ -30,6 +30,10 @@ ul {
   list-style: none;
 }
 
+ul.issue-list {
+  margin-bottom: 20px
+}
+
 ul.issue-list li {
   padding: 10px 10px 20px;
   border-top: 1px solid #d0d0d0;
@@ -39,6 +43,10 @@ ul.issue-list li {
 
 ul.issue-list li:hover {
   background-color: #f5f5f5;
+}
+
+ul.issue-list li:last-child {
+  border-bottom: 1px solid #d0d0d0;
 }
 
 .author-name {
